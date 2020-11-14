@@ -5,7 +5,7 @@
     "type": "library",
     "require": {
         "php": "^7.4",
-        "laravel/framework": "~8.0"
+        "laravel/support": "^7.0|^8.0"
     },
     "require-dev": {
         "orchestra/testbench": "^5.2",
@@ -32,6 +32,7 @@
     "extra": {
         "laravel": {
             "providers": [
+                "Soved\\Laravel\\Snapshot\\SnapshotServiceProvider"
             ]
         }
     }
