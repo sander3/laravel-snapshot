@@ -1,0 +1,38 @@
+{
+    "name": "soved/laravel-snapshot",
+    "description": "Full-page browser screenshots",
+    "keywords": ["laravel", "snapshot", "soved", "screenshot", "full-page"],
+    "type": "library",
+    "require": {
+        "php": "^7.4",
+        "laravel/framework": "~8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.2",
+        "fzaninotto/faker": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Soved\\Laravel\\Snapshot\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sander de Vos",
+            "email": "sander@tutanota.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+            ]
+        }
+    }
+}
