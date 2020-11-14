@@ -5,6 +5,7 @@ namespace Soved\Laravel\Snapshot;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Lumen\Application as LumenApplication;
 use Illuminate\Foundation\Application as LaravelApplication;
+use Soved\Laravel\Snapshot\Contracts\Snapshot as SnapshotContract;
 
 class SnapshotServiceProvider extends ServiceProvider
 {
@@ -26,6 +27,8 @@ class SnapshotServiceProvider extends ServiceProvider
     {
         $this->configure();
         $this->offerPublishing();
+
+        $this->app->singleton(SnapshotContract::class, Snapshot::class);
     }
 
     /**
